@@ -12,6 +12,7 @@
   <h1 class="text-center">Cadastro de usuario</h1>
   <form th:action="@{/salvarUsuario}" th:object="${usuario}" method="post">
   <div class="mb-3">
+  <input type="hidden" th:field="*{id}">
     <label for="nome" class="form-label">Nome</label>
     <input type="text" class="form-control" id="nome" th:field="*{nome}">
   </div>

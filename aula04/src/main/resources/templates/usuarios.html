@@ -20,7 +20,9 @@
       <th scope="col" th:text="${usuario.getNome()}">Nome</th>
       <th scope="col" th:text="${usuario.getEmail()}">E-mail</th>
       <th>
+      <a th:href="@{/editarUsuario/{id} (id=${usuario.id})}">
       <button class="btn btn-primary">Editar</button>
+      </a>
        <a th:href="@{/removerUsuario/{id} (id=${usuario.id})}">
            <button class="btn btn-danger">Remover</button>
        </a>
